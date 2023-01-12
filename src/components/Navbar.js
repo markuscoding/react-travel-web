@@ -28,7 +28,11 @@ const Navbar = () => {
     <>
       <nav className="navbar">
         <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <Link
+            to="/react-travel-web"
+            className="navbar-logo"
+            onClick={closeMobileMenu}
+          >
             <i className="fa-solid fa-gopuram"></i>
             ReactTravel
           </Link>
@@ -37,7 +41,11 @@ const Navbar = () => {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              <Link
+                to="/react-travel-web"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
                 Home
               </Link>
             </li>

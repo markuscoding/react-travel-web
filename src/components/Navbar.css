@@ -88,13 +88,17 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
+    background: #ffff;
     position: absolute;
-    top: 80px;
-    left: -100%;
-    opacity: 1;
-    transition: all 0.5s ease;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    opacity: 0;
+    transition: 0.3s;
   }
 
   .nav-menu.active {
@@ -106,7 +110,7 @@
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: -3;
   }
 
   .nav-links {
@@ -149,7 +153,7 @@
     text-align: center;
     margin: 2rem auto;
     border-radius: 4px;
-    width: 80%;
+    width: 100%;
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;

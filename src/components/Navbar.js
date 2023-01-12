@@ -33,7 +33,6 @@ const Navbar = () => {
             className="navbar-logo"
             onClick={closeMobileMenu}
           >
-            <i className="fa-solid fa-gopuram"></i>
             ReactTravel
           </Link>
           <div className="menu-icon" onClick={handleClick}>
